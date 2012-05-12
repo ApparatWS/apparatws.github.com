@@ -1,0 +1,15 @@
+/*  IE7 -->  *+html selector {top:-10px;}  
+ *	IE8 -->  selector {top /*\**/  /*<DEL>/* :-10px\9;}
+ */
+*+html #logo {position: relative; top: 0; left: 25px;}
+*+html .ratingNews li {margin-right: 12px;}
+*+html #img-min-arrow,
+*+html #img-hour-arrow {};
+.ratingNews li {margin-right /*\**/: 10px;}
+.searchField input {line-height /*\**/: 1.5em;}
+.socialBtns li {margin-right /*\**/: 7px;}
+#logoClock {
+	 background /*\**/: url("../i/clock.png") 2px 1px no-repeat;
+	}
+#img-hour-arrow {left /*\**/: 53px;}
+#img-min-arrow {left /*\**/: 58px;}

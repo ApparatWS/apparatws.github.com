@@ -12,7 +12,7 @@
 	<meta name="author" content="" />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-	<title>SMS Teroid - Service check</title>
+	<title>SMS Teroid - About</title>
     
     <link rel="stylesheet" href="css/reset.css" media="all" />  
 	<link rel="stylesheet" href="css/layout.css" media="all" />
@@ -60,38 +60,25 @@
   				</ul>
   			</nav><!-- /end .b-mainNav -->
   			<section class="b-mainContent">
-  				<div class="b-serviceCheckContainer m-mainContent_containers">
-  					<label class="registerSms__label">Can I register for SMS service in:</label>
-            <p class="b-registerSms__select">
-              <select id="" class="select">
-                <option selected="selected" value="">RUSSIA (+7)</option>
-                <option>RUSSIA (+7)</option>
-                <option>RUSSIA (+7)</option>
-                <option>RUSSIA (+7)</option>
-                <option>RUSSIA (+7)</option>
-                <option>RUSSIA (+7)</option>
-              </select>
-            </p><!-- /end .b-registerSms__select -->
-            <label class="b-sendSms__label m-default__service">Can I register for SMS service in:</label>
-            <p class="b-sendSms__select m-default__service">
-              <select id="" class="select">
-                <option selected="selected" value="">Germany (+49)</option>
-                <option>Germany (+49)</option>
-                <option>Germany (+49)</option>
-                <option>Germany (+49)</option>
-                <option>Germany (+49)</option>
-                <option>Germany (+49)</option>
-              </select>
-            </p><!-- /end .b-registerSms__select -->
-            <div class="b-available-yes">
-              <i class="b-available-yes__corner"></i>
-              <span class="b-available-yes__text" >Yes</span>
-            </div>
-             <div class="b-available-no">
-              <i class="b-available-no__corner"></i>
-              <span class="b-available-no__text" >Not available</span>
-            </div>
-  				</div><!-- /end .b-serviceCheckContainer -->
+  				<form class="b-contactsContainer m-mainContent_containers" action="" method="post">
+            <p class="b-contacts__name">
+  					 <label class="b-contacts__label" for="name">NAME</label>
+             <input id="name" type="text" name="name" />
+            </p>
+            <p class="b-contacts__email">
+             <label class="b-contacts__label" for="email">EMAIL</label>
+             <input id="email" type="email" name="name" />
+            </p>
+            <p class="b-contacts__subject">
+             <label class="b-contacts__label" for="subject">SUBJECT</label>
+             <input id="subject" type="text" name="name" />
+            </p>
+            <p class="b-contacts__message">
+             <label class="b-contacts__label" for="message">MESSAGE</label>
+             <input id="message" type="text" name="name" />
+            </p>
+            <a class="b-sendContacts__btn" href="#" title="">SEND</a>
+  				</form><!-- /end .b-serviceCheckContainer -->
   			</section><!-- /end .b-mainContent -->
   			<footer class="b-footer">
   				<p class="b-copyright">SMSteroidApp.com - All rights, reserved, 2012</p>

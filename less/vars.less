@@ -1,0 +1,74 @@
+// Common LESS variables
+@images: "../i/";
+
+@defTextColor:  #808285;
+@defFontSize:   62.5%;
+@defFontFamily: "Arial", sans-serif;
+@defBgColor:    #fff;
+@defLinkColor:  #36c;
+
+.anchorStyle (@linkColor: @defLinkColor) {
+	&:visited,&:active,&:link {
+		color: @linkColor; 
+	}
+	}
+.italicText(@fSize: 1.0em) {
+	font: italic @fSize Georgia,serif;
+	}
+//italic 1.0em/lh family
+.font (@fontSize: 1.0em) {
+	font-size: @fontSize;
+	}
+.fontf (@fontStyle: normal, @fontSize: 1.0em, @lineHeight: 1.0em, @fontFamily: @defFontFamily, @fontColor: @defTextColor) {
+	font: @fontStyle @fontSize e("/") @lineHeight @fontFamily;
+	color: @fontColor;
+	}
+
+.dims (@elWidth, @elHeight) {
+	width:@elWidth;
+	height:@elHeight;
+	}
+	
+.bg (@bgColor) {
+	background: @bgColor;
+	}
+
+.bgi (@bgName, @bgPosX: 0, @bgPosY: 0, @bgRepeat: no-repeat) {
+	background: url("@{images}@{bgName}") @bgPosX @bgPosY @bgRepeat ;
+	}
+.bgpos (@posX: 0, @posY: 0) {
+	background-position:@posX @posY !important;
+	}
+.inline-block() {
+	display: -moz-inline-stack;
+	display:inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+	}
+.posa(@left: 0, @top: 0) {
+	position:absolute;
+	left: @left;
+	top: @top;
+	}
+.posr(@left: 0, @top: 0) {
+	position:relative;
+	left: @left;
+	top: @top;
+	}
+//CSS3 Mixins
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+    }
+
+.box-shadow (@x: 0, @y: 0, @blur: 1px, @shadowColor: #000) {
+	-webkit-box-shadow: @arguments;
+	   -moz-box-shadow: @arguments;
+	        box-shadow: @arguments;
+	}
+
+
+
+    
