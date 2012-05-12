@@ -5,7 +5,7 @@ ____________________________________________*/
 /**=Not Standart Fonts**/
 /* Default font settings */
 body {
-  font: 62.5% 'Mariad Pro', sans-serif;
+  font: 62.5% 'Tahoma', sans-serif;
 }
 /* Headings
 ____________________________________________*/
@@ -18,4 +18,40 @@ ____________________________________________*/
 /* Text elements
 ____________________________________________*/
 /* =Text elements
+____________________________________________*/
+/* Main Navigation
+____________________________________________*/
+.b-mainNav-list_link {
+  font-size: 1.2em;
+  color: #8f8f8f;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 4.0em;
+  text-shadow: #121212 0px -1px 1px;
+}
+.m-serviceCheck_link {
+  text-shadow: #480200 0px -1px 1px;
+}
+.m-active_item a {
+  color: white;
+}
+/* =Main Navigation
+____________________________________________*/
+/* Main Content
+____________________________________________*/
+.b-aboutContainer_text {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  color: #3a3a3a;
+}
+/* =Main Content
+____________________________________________*/
+/* Footer
+____________________________________________*/
+.b-copyright {
+  font-size: 1em;
+  line-height: 4.6em;
+  color: #bcbcbc;
+}
+/* =Footer
 ____________________________________________*/
