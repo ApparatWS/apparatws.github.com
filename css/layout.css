@@ -52,8 +52,11 @@ ____________________________________________*/
   background: url("../i/sprite_storeBtn.png") 0px 0px no-repeat;
 }
 .b-header__appStoreBtn {
-  background-position: 0 0 !important;
+  /*.bgpos (0, 0); */
+
   top: 10px;
+  background: url("../i/appBTN.png") 100% 100% no-repeat;
+  background-size: cover;
 }
 .b-header__googlePlayBtn {
   background-position: 0px -32px !important;
