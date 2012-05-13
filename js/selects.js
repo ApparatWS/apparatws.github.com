@@ -27,6 +27,7 @@ $(document).ready(function(){
     );
     
     $('div.selectArea > input,div.center_a').live(event, function(){
+    	if ($(this).closest('.selectArea').hasClass('disabled')) return false;
         $(this).closest('.selectArea').find('.optionsDivInvisible').slideToggle(200);
 
         //generate scrollbar if options more than 8
