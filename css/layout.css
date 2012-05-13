@@ -459,6 +459,7 @@ ____________________________________________*/
     margin: 0 0 0 150px;
     width: 432px;
     height: 76px;
+    line-height: 76px;
     padding: 0px 10px !important;
     font-size: 28px !important;
   }
