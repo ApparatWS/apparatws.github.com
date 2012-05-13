@@ -1,0 +1,512 @@
+/* Modifiers
+____________________________________________*/
+.m-clear {
+  clear: both;
+  margin-bottom: 10px;
+}
+.disabled {
+  opacity: 0.2;
+  -moz-opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+.m-mainContent_containers {
+  display: none;
+}
+/* =Modifiers
+____________________________________________*/
+/* Common
+____________________________________________*/
+html,
+body,
+#b-wrapper {
+  height: 100%;
+}
+body > #b-wrapper {
+  height: auto;
+  min-height: 100%;
+}
+#b-wrapper {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+#b-layout {
+  width: 100%;
+  height: 1%;
+  overflow: hidden;
+}
+/* =Common
+____________________________________________*/
+/* Header
+____________________________________________*/
+.b-header {
+  background: #efefef;
+  height: 103px;
+  padding: 0px 10px;
+  overflow: hidden;
+  position: relative;
+}
+.b-logo {
+  width: 95px;
+  height: 58px;
+  margin-top: 20px;
+  float: left;
+}
+.b-logo__img {
+  width: 95px;
+  height: 58px;
+}
+.b-header__appStoreBtn,
+.b-header__googlePlayBtn {
+  position: absolute;
+  right: 10px;
+  width: 95px;
+  height: 32px;
+  display: block;
+}
+.b-header__appStoreBtn {
+  top: 14px;
+  background: url("../i/appBtn.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+.b-header__googlePlayBtn {
+  background: url("../i/googlePlayBtn.png") 100% 100% no-repeat;
+  background-size: cover;
+  top: 55px;
+}
+/* =Header
+____________________________________________*/
+/* Main Navigation
+____________________________________________*/
+.b-mainNav {
+  border-top: 1px solid black;
+  border-bottom: 1px solid white;
+  height: 53px;
+  background: url("../i/mainNavBg.png") 0 0 repeat-x;
+}
+.b-mainNav__list {
+  height: 100%;
+  width: 100%;
+}
+.b-mainNav-list_item {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  text-align: center;
+  padding: 0px 10px;
+  position: relative;
+  height: 100%;
+  margin-right: 0px;
+}
+.b-mainNav__list .b-mainNav-list_item:last-child {
+  margin-right: 0;
+}
+.b-mainNav-list_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.b-mainNav-active_corner {
+  display: none;
+  width: 16px;
+  height: 4px;
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  margin-left: -8px;
+  background: url("../i/mainNav_corner.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+.m-active_item .b-mainNav-active_corner {
+  display: block;
+}
+/* =Main Navigation
+____________________________________________*/
+/* Main Content
+____________________________________________*/
+.b-mainContent {
+  background: #efefef;
+  padding: 0px 10px;
+}
+.b-aboutContainer {
+  padding: 15px 0px 34px 0px;
+}
+.b-faqContainer {
+  padding: 17px 0px 16px 0px;
+}
+.b-faqContainer_text {
+  margin: 0 9px 11px 9px;
+  display: none;
+}
+.b-serviceCheckContainer {
+  padding: 38px 0px 45px 0px;
+  position: relative;
+}
+.b-registerSms__select,
+.b-sendSms__select {
+  width: 196px;
+  height: 38px;
+  display: none;
+}
+.b-registerSms,
+.b-sendSms {
+  width: 196px;
+  height: 38px;
+}
+.b-registerSms {
+  margin-bottom: 55px;
+}
+.b-select-container {
+  position: relative;
+}
+.register_select,
+.b-sendSms_select {
+  width: 100%;
+  -webkit-appearance: none;
+  height: 38px;
+  background: url("../i/selects.png") 100% 100% no-repeat;
+  background-size: cover;
+  padding-left: 5px;
+}
+.b-registerSms__select {
+  margin-bottom: 55px;
+}
+.registerSms__label,
+.b-sendSms__label {
+  display: block;
+  margin-bottom: 10px;
+}
+.b-available-yes,
+.b-available-no {
+  position: absolute;
+  right: -10px;
+  width: 70px;
+  padding-left: 2px;
+}
+.b-available-yes {
+  top: 0px;
+  height: 37px;
+  background: url("../i/service_available_yesBg.png") 0 0 repeat-x;
+}
+.b-available-no {
+  top: 0px;
+  height: 37px;
+  background: url("../i/service_available_noBg.png") 0 0 repeat-x;
+}
+.b-available-yes__corner,
+.b-available-no__corner {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 10px;
+  height: 37px;
+}
+.b-available-yes__corner {
+  background: url("../i/service_available_yes_corner.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+.b-available-no__corner {
+  background: url("../i/service_available_no_corner.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+.b-available-no__text {
+  position: relative;
+  top: 1px;
+}
+.b-contactsContainer {
+  padding: 22px 0px 16px 0px;
+  width: 100%;
+}
+.b-contactsContainer p {
+  overflow: hidden;
+  margin-bottom: 9px;
+  position: relative;
+}
+.b-contacts__label {
+  width: 75px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.b-contacts__input {
+  background: url("../i/contactBg_input.png") 100% 100% no-repeat;
+  background-size: 100% 100%;
+  width: 206px;
+  height: 38px;
+  padding: 0px 10px !important;
+  margin: 0 0 0 78px;
+}
+.b-sendContacts__btn {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  height: 38px;
+  text-align: center;
+  background: url("../i/sendBtn_bg.png") 0 0 repeat-x;
+  border-right: 1px solid #7c0700;
+  border-left: 1px solid #7c0700;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-top: 14px;
+}
+/* =Main Content
+____________________________________________*/
+/* Footer
+____________________________________________*/
+.b-footer {
+  border-top: 2px solid #bd231c;
+  height: 51px;
+  background: #707070 url("../i/footer_shadow.png") 0px 0px repeat-x;
+  padding: 0 10px;
+  position: relative;
+  overflow: hidden;
+}
+.b-copyright {
+  float: left;
+}
+.b-footer__appStoreBtn,
+.b-footer__googlePlayBtn {
+  width: 48px;
+  height: 16px;
+  position: absolute;
+  top: 18px;
+}
+.b-footer__appStoreBtn {
+  right: 68px;
+  background: url("../i/footer_appBtn.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+.b-footer__googlePlayBtn {
+  right: 10px;
+  background: url("../i/footer_googlePlayBtn.png") 100% 100% no-repeat;
+  background-size: cover;
+}
+/* =Footer
+____________________________________________*/
+/* Media Queries
+____________________________________________*/
+@media all and (min-width: 960px) {
+  .b-header {
+    height: 213px;
+    padding: 0px 25px;
+  }
+  .b-logo,
+  .b-logo__img {
+    width: 190px;
+    height: 117px;
+  }
+  .b-logo {
+    margin-top: 27px;
+  }
+  .b-header__appStoreBtn,
+  .b-header__googlePlayBtn {
+    right: 20px;
+    width: 191px;
+    height: 64px;
+  }
+  .b-header__appStoreBtn {
+    top: 28px;
+  }
+  .b-header__googlePlayBtn {
+    top: 110px;
+  }
+  .b-mainNav {
+    border-top: 2px solid black;
+    height: 65px;
+    background: url("../i/desktop_mainNavBg.png") 0 0 repeat-x;
+  }
+  .b-mainNav-active_corner {
+    display: none;
+    width: 32px;
+    height: 8px;
+    bottom: -8px;
+    margin-left: -16px;
+    background: url("../i/mainNav_corner.png") 0 0 no-repeat;
+  }
+  .b-mainNav-list_item {
+    padding: 0px 25px;
+    margin-right: 20px;
+  }
+  .b-mainNav-list_link {
+    font-size: 30px !important;
+    line-height: 60px !important;
+  }
+  .b-mainContent {
+    padding: 0px 25px;
+  }
+  .b-serviceCheckContainer {
+    padding: 45px 0px 90px 0px;
+    position: relative;
+  }
+  .b-registerSms__select {
+    margin-bottom: 61px;
+  }
+  .b-available-yes,
+  .b-available-no {
+    right: -25px;
+    width: 188px;
+    padding-left: 4px;
+  }
+  .b-available-yes {
+    top: 0;
+    height: 54px;
+    background: url("../i/desktop_service_available_yesBg.png") 0 0 repeat-x;
+  }
+  .b-available-no {
+    top: 0;
+    height: 74px;
+    background: url("../i/desktop_service_available_noBg.png") 0 0 repeat-x;
+    width: 168px !important;
+    padding-right: 20px;
+  }
+  .b-available-yes__corner,
+  .b-available-no__corner {
+    left: -21px;
+    width: 21px;
+  }
+  .b-available-yes__corner {
+    background: url("../i/desktop_service_available_yes_corner.png") 0 0 no-repeat;
+    height: 54px;
+  }
+  .b-available-no__corner {
+    background: url("../i/desktop_service_available_no_corner.png") 0 0 no-repeat;
+    height: 74px;
+  }
+  .b-available-no__text {
+    position: relative;
+    top: 4px;
+    line-height: 30px !important;
+  }
+  .b-available-yes__text,
+  .b-available-no__text {
+    font-size: 30px !important;
+  }
+  .b-available-yes__text {
+    line-height: 1.7em !important;
+  }
+  .registerSms__label,
+  .b-sendSms__label {
+    font-size: 30px !important;
+    margin-bottom: 20px;
+  }
+  .b-registerSms__select,
+  .b-sendSms__select {
+    width: 702px;
+    height: 54px;
+    display: block;
+  }
+  .selectArea,
+  .center_a,
+  .selectArea .left,
+  .scrollbar-up,
+  .scrollbar-down,
+  .scrollbar-handle {
+    background: url(../i/desktop_selects.png) 0 0 no-repeat;
+  }
+  .selectArea {
+    height: 54px !important;
+  }
+  .selectArea .optionsDivInvisible,
+  .selectArea .optionsDivVisible {
+    top: 54px !important;
+  }
+  .selectArea input {
+    font-size: 24px !important;
+  }
+  .b-footer {
+    border-top: 4px solid #BD231C;
+    height: 102px;
+    padding: 0 25px;
+  }
+  .b-copyright {
+    font-size: 15px !important;
+    line-height: 108px !important;
+  }
+  .b-footer__appStoreBtn,
+  .b-footer__googlePlayBtn {
+    width: 96px;
+    height: 32px;
+    top: 36px;
+  }
+  .b-footer__appStoreBtn {
+    right: 133px;
+    background: url("../i/footer_appBtn.png") 0 0 no-repeat;
+  }
+  .b-footer__googlePlayBtn {
+    right: 20px;
+    background: url("../i/footer_googlePlayBtn.png") 0 0 no-repeat;
+  }
+  .b-contactsContainer {
+    padding: 44px 0px 32px 0px;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .b-contactsContainer p {
+    margin-bottom: 18px;
+  }
+  .b-contacts__label {
+    width: 135px;
+    font-size: 28px !important;
+    line-height: 74px !important;
+  }
+  .b-contacts__input {
+    background: url("../i/contactBg_input.png") 0 0 no-repeat;
+    background-size: !important;
+    margin: 0 0 0 150px;
+    width: 432px;
+    height: 76px;
+    line-height: 76px;
+    padding: 0px 10px !important;
+    font-size: 28px !important;
+  }
+  .b-sendContacts__btn {
+    display: block;
+    width: 100%;
+    height: 76px;
+    background: url("../i/desktop_sendBtn_bg.png") 0 0 repeat-x;
+    margin-top: 28px;
+    font-size: 48px !important;
+    line-height: 72px !important;
+  }
+  .b-aboutContainer_text {
+    font-size: 30px !important;
+    line-height: 40px !important;
+  }
+  .m-clear {
+    margin-bottom: 20px;
+  }
+  .b-faqContainer__link {
+    font-size: 30px !important;
+  }
+  .b-faqContainer_text {
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin: 0 18px 22px 18px;
+  }
+  .b-registerSms,
+  .b-sendSms {
+    width: 196px;
+    height: 38px;
+    display: none;
+  }
+}
+body {
+  transition: all .9s linear;
+  -o-transition: all .9s linear;
+  -moz-transition: all .9s linear;
+  -webkit-transition: all .9s linear;
+}
+/* =Media Queries
+____________________________________________*/
+/* Styles For IE
+____________________________________________*/
+.ie7 .m-default__service,
+.ie8 .m-default__service {
+  filter: alpha(opacity=20);
+}
+/* =Styles For IE
+____________________________________________*/
