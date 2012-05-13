@@ -3,8 +3,7 @@
 	<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 	<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 	<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-	<!--[if (gt IE 9)|!(IE)]><!--><!--<![endif]-->
-<html lang="ru-RU">
+	<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"><!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -37,7 +36,7 @@
   		<div id="b-layout">
   			<header class="b-header">
   				<div class="b-logo">
-  					<img class="b-logo__img" src="" alt="Logo" />
+  					<img class="b-logo__img" src="i/logo.png" alt="Logo" />
   				</div>
   				<a class="b-header__appStoreBtn" href="#" title=""></a>
   				<a class="b-header__googlePlayBtn" href="#" title=""></a>
@@ -45,17 +44,17 @@
   			<nav class="b-mainNav">
   				<ul class="b-mainNav__list">
   					<li class="b-mainNav-list_item m-active_item">
-  						<a class="b-mainNav-list_link" href="#" title="">About</a>
+  						<a class="b-mainNav-list_link" href="#" title="">ABOUT</a>
   						<i class="b-mainNav-active_corner"></i>
   					</li>
   					<li class="b-mainNav-list_item">
   						<a class="b-mainNav-list_link" href="#" title="">FAQ</a>
   					</li>
   					<li class="b-mainNav-list_item">
-  						<a class="b-mainNav-list_link" href="#" title="">Service Check</a>
+  						<a class="b-mainNav-list_link m-serviceCheck_link" href="#" title="">SERVICE CHECK</a>
   					</li>
   					<li class="b-mainNav-list_item">
-  						<a class="b-mainNav-list_link" href="#" title="">Contact</a>
+  						<a class="b-mainNav-list_link" href="#" title="">CONTACT</a>
   					</li>
   				</ul>
   			</nav><!-- /end .b-mainNav -->
@@ -63,19 +62,19 @@
   				<form class="b-contactsContainer m-mainContent_containers" action="" method="post">
             <p class="b-contacts__name">
   					 <label class="b-contacts__label" for="name">NAME</label>
-             <input id="name" type="text" name="name" />
+             <input class="b-contacts__input" id="name" type="text" name="name" />
             </p>
             <p class="b-contacts__email">
              <label class="b-contacts__label" for="email">EMAIL</label>
-             <input id="email" type="email" name="name" />
+             <input class="b-contacts__input" id="email" type="email" name="name" />
             </p>
             <p class="b-contacts__subject">
              <label class="b-contacts__label" for="subject">SUBJECT</label>
-             <input id="subject" type="text" name="name" />
+             <input class="b-contacts__input" id="subject" type="text" name="name" />
             </p>
             <p class="b-contacts__message">
              <label class="b-contacts__label" for="message">MESSAGE</label>
-             <input id="message" type="text" name="name" />
+             <input class="b-contacts__input" id="message" type="text" name="name" />
             </p>
             <a class="b-sendContacts__btn" href="#" title="">SEND</a>
   				</form><!-- /end .b-serviceCheckContainer -->
@@ -89,8 +88,9 @@
   </div><!-- /end #b-wrapper -->
 	      
 	<script src="js/jquery.min.js"></script>
-	<script src="js/common.js"></script>>
-	
+	<script src="js/common.js"></script>
+	<script src="js/css3-mediaqueries.js"></script>
+  <script src="js/pie.js"></script>
 
 	<!--[if lt IE 9]>
 		<script src="js/ie.js"></script>

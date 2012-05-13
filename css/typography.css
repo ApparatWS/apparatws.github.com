@@ -26,7 +26,7 @@ ____________________________________________*/
   color: #8f8f8f;
   font-weight: bold;
   text-decoration: none;
-  line-height: 4.0em;
+  line-height: 4.3em;
   text-shadow: #121212 0px -1px 1px;
 }
 .m-serviceCheck_link {
@@ -41,16 +41,63 @@ ____________________________________________*/
 ____________________________________________*/
 .b-aboutContainer_text {
   font-size: 1.5em;
-  line-height: 1.2em;
+  line-height: 1.35em;
   color: #3a3a3a;
+}
+.b-faqContainer__link {
+  font-size: 1.5em;
+  line-height: 1.35em;
+  text-decoration: none;
+  border-bottom: 1px dashed;
+  color: #1f85bf;
+}
+.b-faqContainer_text {
+  font-size: 1.2em;
+  line-height: 1.25em;
+  color: #3a3a3a;
+}
+.registerSms__label,
+.b-sendSms__label {
+  font-size: 1.5em;
+  color: #5b5b5b;
+}
+.b-available-yes__text,
+.b-available-no__text {
+  font-size: 1.5em;
+  font-style: italic;
+}
+.b-available-yes__text {
+  color: #536e09;
+  line-height: 2.3em;
+}
+.b-available-no__text {
+  color: white;
+  line-height: 1.0em;
+}
+.b-contacts__label {
+  font-size: 1.4em;
+  color: #5b5b5b;
+  font-weight: bold;
+  line-height: 2.6em;
+}
+.b-sendContacts__btn {
+  text-decoration: none;
+  font-size: 2.4em;
+  color: white;
+  font-weight: bold;
+  line-height: 1.6em;
+  text-shadow: #480200 0px 1px -1px;
+}
+.b-contacts__input {
+  font-size: 1.4em;
 }
 /* =Main Content
 ____________________________________________*/
 /* Footer
 ____________________________________________*/
 .b-copyright {
-  font-size: 1em;
-  line-height: 4.6em;
+  font-size: 0.8em;
+  line-height: 6.75em;
   color: #bcbcbc;
 }
 /* =Footer

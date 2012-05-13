@@ -1,7 +1,15 @@
 @import "vars";
 /* Modifiers
 ____________________________________________*/
-
+.m-clear {
+	clear: both;
+	margin-bottom: 10px;
+	}
+.m-default__service {
+	opacity: 0.2;
+	-moz-opacity: 0.2;
+	filter:alpha(opacity=20);
+	}
 /* =Modifiers
 ____________________________________________*/
 
@@ -15,14 +23,13 @@ body > #b-wrapper {
 	min-height: 100%;
 }
 #b-wrapper {
-	max-width: 320px;
-	/*min-width: 320px;*/
+	max-width: 1200px;
+	min-width: 320px;
 	margin: 0 auto;
 	}
 #b-layout {
 	width: 100%;
 	height: 1%;
-	padding-bottom: 161px;
 	overflow: hidden;
 	}
 /* =Common
@@ -40,8 +47,12 @@ ____________________________________________*/
 .b-logo {
 	width: 95px;
 	height: 58px;
-	margin-top: 17px;
+	margin-top: 20px;
 	float: left;
+	}
+.b-logo__img {
+	width: 95px;
+	height: 58px;
 	}
 .b-header__appStoreBtn,
 .b-header__googlePlayBtn {
@@ -50,17 +61,16 @@ ____________________________________________*/
 	width: 95px;
 	height: 32px;
 	display: block;
-	.bgi ("sprite_storeBtn.png", 0px, 0px, no-repeat);
 	}
 .b-header__appStoreBtn {
-	/*.bgpos (0, 0); */
-	top: 10px;
-	.bgi ("appBTN.png", 100%, 100%, no-repeat);
+	top: 14px;
+	.bgi ("appBtn.png", 100%, 100%, no-repeat);
 	background-size: cover;
 	}
 .b-header__googlePlayBtn {
-	.bgpos (0px, -32px) !important;
-	top: 51px;
+	.bgi ("googlePlayBtn.png", 100%, 100%, no-repeat);
+	background-size: cover;
+	top: 55px;
 	}
 /* =Header
 ____________________________________________*/
@@ -70,8 +80,8 @@ ____________________________________________*/
 .b-mainNav {
 	border-top: 1px solid black;
 	border-bottom: 1px solid white;
-	height: 52px;
-	.bgi ("mainNavBg.png", 0px, 0px, repeat-x);
+	height: 53px;
+	.bgi ("mainNavBg.png", 0, 0, repeat-x);
 	}
 .b-mainNav__list {
 	height: 100%;
@@ -80,10 +90,12 @@ ____________________________________________*/
 .b-mainNav-list_item {
 	.inline-block();
 	text-align: center;
-	padding: 0px 11px;
+	padding: 0px 10px;
 	position: relative;
 	height: 100%;
+	margin-right: 4px;
 	}
+.b-mainNav__list .b-mainNav-list_item:last-child {margin-right: 0;}
 .b-mainNav-list_link {
 	display: block;
 	width: 100%;
@@ -97,7 +109,8 @@ ____________________________________________*/
 	bottom: -4px;
 	left: 50%;
 	margin-left: -8px;
-	.bgi ("mainNav_corner.png", 0px, 0px, repeat-x);
+	.bgi ("mainNav_corner.png", 100%, 100%, no-repeat);
+	background-size: cover;
 	}
 /* =Main Navigation
 ____________________________________________*/
@@ -109,7 +122,102 @@ ____________________________________________*/
 	padding: 0px 10px;
 	}
 .b-aboutContainer {
-	padding: 20px 0px 30px 0px;
+	padding: 15px 0px 34px 0px;
+	}
+.b-faqContainer {
+	padding: 17px 0px 16px 0px;
+	}
+.b-faqContainer__link {
+	}
+.b-faqContainer_text {
+	margin: -2px 9px 11px 9px;
+	}
+.b-serviceCheckContainer {
+	padding: 38px 0px 45px 0px;
+	position: relative;
+	}
+.b-registerSms__select,
+.b-sendSms__select {
+	width: 196px;
+	height: 38px;
+	}
+.b-registerSms__select {
+	margin-bottom: 55px;
+	}
+.registerSms__label,
+.b-sendSms__label {
+	display: block;
+	margin-bottom: 10px;
+	}
+.b-available-yes,
+.b-available-no {
+	position: absolute;
+	right: -10px;
+	width: 70px;
+	padding-left: 2px;
+	}
+.b-available-yes {
+	top: 66px;
+	height: 37px;
+	.bgi ("service_available_yesBg.png", 0, 0, repeat-x);
+	}
+.b-available-no {
+	top: 188px;
+	height: 37px;
+	.bgi ("service_available_noBg.png", 0, 0, repeat-x);
+	}
+.b-available-yes__corner,
+.b-available-no__corner {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -10px;
+	width: 10px;
+	height: 37px;
+	}
+.b-available-yes__corner {
+	.bgi ("service_available_yes_corner.png", 100%, 100%, no-repeat);
+	background-size: cover;
+	}
+.b-available-no__corner {
+	.bgi ("service_available_no_corner.png", 100%, 100%, no-repeat);
+	background-size: cover;
+	}
+.b-available-no__text {
+	position: relative;
+	top: 1px;
+	}
+.b-contactsContainer {
+	padding: 22px 0px 16px 0px;
+	width: 300px;
+	margin: 0 auto;
+	}
+	.b-contactsContainer p {
+		overflow: hidden;
+		margin-bottom: 9px;
+		}
+.b-contacts__label {
+	float: left;
+	}
+.b-contacts__input {
+	float: right;
+	.bgi ("contactBg_input.png", 100%, 100%, no-repeat);
+	background-size: cover;
+	width: 205px;
+	height: 38px;
+	padding: 0px 10px !important;
+	}
+.b-sendContacts__btn {
+	display: block;
+	width: 298px;
+	margin: 0 auto;
+	height: 38px;
+	text-align: center;
+	.bgi ("sendBtn_bg.png", 0, 0, repeat-x);
+	border-right: 1px solid #7c0700;
+	border-left: 1px solid #7c0700;
+	.border-radius (5px);
+	margin-top: 14px;
 	}
 /* =Main Content
 ____________________________________________*/
@@ -118,7 +226,7 @@ ____________________________________________*/
 ____________________________________________*/
 .b-footer {
 	border-top: 2px solid #bd231c;
-	height: 50px;
+	height: 51px;
 	background: #707070 url("../i/footer_shadow.png") 0px 0px repeat-x;
 	padding: 0 10px;
 	position: relative;
@@ -128,20 +236,222 @@ ____________________________________________*/
 	}
 .b-footer__appStoreBtn,
 .b-footer__googlePlayBtn {
-	float: right;
 	width: 48px;
 	height: 16px;
 	position: absolute;
-	top: 16px;
-	.bgi ("sprite_storeBtn.png", 0px, -64px, no-repeat);
+	top: 18px;
 	}
 .b-footer__appStoreBtn {
 	right: 68px;
+	.bgi ("footer_appBtn.png", 100%, 100%, no-repeat);
+	background-size: cover;
 	}
 .b-footer__googlePlayBtn {
 	right: 10px;
-	.bgpos (0px, -80px) !important;
+	.bgi ("footer_googlePlayBtn.png", 100%, 100%, no-repeat);
+	background-size: cover;
 	}
 /* =Footer
 ____________________________________________*/
 
+/* Media Queries
+____________________________________________*/
+@media all and (min-width: 960px) {
+	.b-header {
+		height: 213px;
+		padding: 0px 25px;
+		}
+	.b-logo,
+	.b-logo__img {
+	width: 190px;
+	height: 117px;
+	}
+	.b-logo {
+		margin-top: 27px;
+		}
+	.b-header__appStoreBtn,
+	.b-header__googlePlayBtn {
+		right: 20px;
+		width: 191px;
+		height: 64px;
+		}
+	.b-header__appStoreBtn {
+		top: 28px;
+		}
+	.b-header__googlePlayBtn {
+		top: 110px;
+		}
+	.b-mainNav {
+		border-top: 2px solid black;
+		height: 65px;
+		.bgi ("desktop_mainNavBg.png", 0, 0, repeat-x);
+	}
+	.b-mainNav-active_corner {
+		display: block;
+		width: 32px;
+		height: 8px;
+		bottom: -8px;
+		margin-left: -16px;
+		.bgi ("mainNav_corner.png", 0, 0, no-repeat);
+	}
+	.b-mainNav-list_item {
+		padding: 0px 25px;
+		margin-right: 20px;
+		}
+	.b-mainNav-list_link {
+		.font (3.0em) !important;
+		line-height: 2.0em !important;
+	}
+	.b-mainContent {
+		padding: 0px 25px;
+		}
+	.b-serviceCheckContainer {
+		padding: 45px 0px 90px 0px;
+		position: relative;
+		}
+	.b-registerSms__select {
+		margin-bottom: 61px;
+		}
+	.b-available-yes,
+	.b-available-no {
+		right: -25px;
+		width: 188px;
+		padding-left: 4px;
+		}
+	.b-available-yes {
+		top: 102px;
+		height: 54px;
+		.bgi ("desktop_service_available_yesBg.png", 0, 0, repeat-x);
+		}
+	.b-available-no {
+		top: 274px;
+		height: 74px;
+		.bgi ("desktop_service_available_noBg.png", 0, 0, repeat-x);
+		width: 168px !important;
+		padding-right: 20px;
+		}
+	.b-available-yes__corner,
+	.b-available-no__corner {
+		left: -21px;
+		width: 21px;
+		}
+	.b-available-yes__corner {
+		.bgi ("desktop_service_available_yes_corner.png", 0, 0, no-repeat);
+		height: 54px;
+		}
+	.b-available-no__corner {
+		.bgi ("desktop_service_available_no_corner.png", 0, 0, no-repeat);
+		height: 74px;
+		}
+	.b-available-no__text {
+		position: relative;
+		top: 4px;
+		}
+	.b-available-yes__text,
+	.b-available-no__text {
+		.font (3.0em) !important;
+		}
+	.b-available-yes__text {
+		line-height: 1.7em !important;
+		}
+	.registerSms__label, 
+	.b-sendSms__label {
+		.font (3.0em) !important;
+		margin-bottom: 20px;
+		}
+	.b-registerSms__select, 
+	.b-sendSms__select {
+		width: 702px;
+		height: 54px;
+		}
+	.selectArea, .center_a, .selectArea .left, .scrollbar-up, .scrollbar-down, .scrollbar-handle {
+		background: url(../i/desktop_selects.png) 0 0 no-repeat;
+		}
+	.selectArea {
+		height:	54px !important;
+		}
+	.selectArea .optionsDivInvisible, .selectArea .optionsDivVisible {
+		top: 54px !important;
+		}
+	.selectArea input {
+		font-size: 2.4em !important;
+		}
+	.b-footer {
+		border-top: 4px solid #BD231C;
+		height: 102px;
+		padding: 0 25px;
+		}
+	.b-copyright {
+		font-size: 1.5em !important;
+		line-height: 6.7em !important;
+		}
+	.b-footer__appStoreBtn, .b-footer__googlePlayBtn {
+		width: 96px;
+		height: 32px;
+		top: 36px;
+		}
+	.b-footer__appStoreBtn {
+		  right: 133px;
+		  background: url("../i/footer_appBtn.png") 0 0 no-repeat;
+		}
+		.b-footer__googlePlayBtn {
+		  right: 20px;
+		  background: url("../i/footer_googlePlayBtn.png") 0 0 no-repeat;
+		}
+	.b-contactsContainer {
+		padding: 44px 0px 32px 0px;
+		width: 610px;
+		}
+		.b-contactsContainer p {
+			margin-bottom: 18px;
+			}
+	.b-contacts__label {
+		.font (2.8em) !important;
+		}
+	.b-contacts__input {
+		float: right;
+		.bgi ("contactBg_input.png", 0, 0, no-repeat);
+		width: 432px;
+		height: 76px;
+		padding: 0px 10px !important;
+		.font (2.8em) !important;
+		}
+	.b-sendContacts__btn {
+		display: block;
+		width: 608px;
+		height: 76px;
+		.bgi ("desktop_sendBtn_bg.png", 0, 0, repeat-x);
+		margin-top: 28px;
+		.font (4.8em) !important;
+		}
+	.b-aboutContainer_text {
+		  .font (3.0em) !important;
+		}
+	.m-clear {
+		margin-bottom: 20px;
+		}
+	.b-faqContainer__link {
+		.font (3.0em) !important;
+		}
+	.b-faqContainer_text {
+		.font (2.4em) !important;
+		margin: -4px 18px 22px 18px;
+		}					
+  }
+body {
+  transition: all .9s linear;
+  -o-transition: all .9s linear;
+  -moz-transition: all .9s linear;
+  -webkit-transition: all .9s linear;
+}
+/* =Media Queries
+____________________________________________*/
+
+/* Styles For IE
+____________________________________________*/
+.ie7 .m-default__service,
+.ie8 .m-default__service {
+  filter: alpha(opacity=20);
+}
+/* =Styles For IE
+____________________________________________*/
