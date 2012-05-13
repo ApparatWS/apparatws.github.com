@@ -106,7 +106,7 @@ ____________________________________________*/
   height: 100%;
 }
 .b-mainNav-active_corner {
-  display: block;
+  display: none;
   width: 16px;
   height: 4px;
   position: absolute;
@@ -115,6 +115,9 @@ ____________________________________________*/
   margin-left: -8px;
   background: url("../i/mainNav_corner.png") 100% 100% no-repeat;
   background-size: cover;
+}
+.m-active_item .b-mainNav-active_corner {
+  display: block;
 }
 /* =Main Navigation
 ____________________________________________*/
@@ -216,17 +219,21 @@ ____________________________________________*/
 .b-contactsContainer p {
   overflow: hidden;
   margin-bottom: 9px;
+  position: relative;
 }
 .b-contacts__label {
-  float: left;
+  width: 75px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .b-contacts__input {
-  float: right;
   background: url("../i/contactBg_input.png") 100% 100% no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 206px;
   height: 38px;
   padding: 0px 10px !important;
+  margin: 0 0 0 78px;
 }
 .b-sendContacts__btn {
   display: block;
@@ -309,7 +316,7 @@ ____________________________________________*/
     background: url("../i/desktop_mainNavBg.png") 0 0 repeat-x;
   }
   .b-mainNav-active_corner {
-    display: block;
+    display: none;
     width: 32px;
     height: 8px;
     bottom: -8px;
@@ -438,12 +445,14 @@ ____________________________________________*/
     margin-bottom: 18px;
   }
   .b-contacts__label {
+    width: 135px;
     font-size: 28px !important;
     line-height: 74px !important;
   }
   .b-contacts__input {
-    float: right;
     background: url("../i/contactBg_input.png") 0 0 no-repeat;
+    background-size: !important;
+    margin: 0 0 0 150px;
     width: 432px;
     height: 76px;
     padding: 0px 10px !important;
