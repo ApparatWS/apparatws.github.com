@@ -28,6 +28,7 @@ $(document).ready (function(){
 		$(this).siblings().removeClass('m-active_item').end().addClass('m-active_item');
 		$('.m-mainContent_containers').hide();
 		showPage();
+		return false;
 	});
 	
 	$('.b-faqContainer__link').on('click', function(){
