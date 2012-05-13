@@ -52,7 +52,7 @@ $(document).ready(function(){
     function changeSelects(selector){
         if (!selector) selector = '';
       
-        $(selector + "select").each(function(index){
+        $("."+ selector + "select").each(function(index){
             
             index = counter;
         
