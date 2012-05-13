@@ -151,6 +151,9 @@ ____________________________________________*/
 .b-registerSms {
   margin-bottom: 55px;
 }
+.b-select-container {
+  position: relative;
+}
 .register_select,
 .b-sendSms_select {
   width: 100%;
@@ -176,12 +179,12 @@ ____________________________________________*/
   padding-left: 2px;
 }
 .b-available-yes {
-  top: 66px;
+  top: 0px;
   height: 37px;
   background: url("../i/service_available_yesBg.png") 0 0 repeat-x;
 }
 .b-available-no {
-  top: 188px;
+  top: 0px;
   height: 37px;
   background: url("../i/service_available_noBg.png") 0 0 repeat-x;
 }
@@ -338,12 +341,12 @@ ____________________________________________*/
     padding-left: 4px;
   }
   .b-available-yes {
-    top: 102px;
+    top: 0;
     height: 54px;
     background: url("../i/desktop_service_available_yesBg.png") 0 0 repeat-x;
   }
   .b-available-no {
-    top: 274px;
+    top: 0;
     height: 74px;
     background: url("../i/desktop_service_available_noBg.png") 0 0 repeat-x;
     width: 168px !important;
