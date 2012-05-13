@@ -95,7 +95,7 @@ ____________________________________________*/
   padding: 0px 10px;
   position: relative;
   height: 100%;
-  margin-right: -2px;
+  margin-right: 0px;
 }
 .b-mainNav__list .b-mainNav-list_item:last-child {
   margin-right: 0;
