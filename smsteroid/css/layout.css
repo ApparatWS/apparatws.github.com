@@ -12,6 +12,10 @@ ____________________________________________*/
 .m-mainContent_containers {
   display: none;
 }
+.m-error_input {
+  background: url("../i/error_input.png") 100% 100% no-repeat !important;
+  background-size: 100% 100% !important;
+}
 /* =Modifiers
 ____________________________________________*/
 /* Common
