@@ -104,7 +104,7 @@ $(document).ready(function(){
 	// $('input[placeholder], textarea[placeholder]').placeholder();
 
 	if (window.PIE) {
-        $('.b-sendContacts__btn').each(function() {
+        $('.b-mainNav-list_link, .m-serviceCheck_link, .b-sendContacts__btn').each(function() {
             PIE.attach(this);
         });
     }
