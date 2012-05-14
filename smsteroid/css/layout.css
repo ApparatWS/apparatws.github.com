@@ -511,7 +511,8 @@ body {
 ____________________________________________*/
 /* Styles For IE
 ____________________________________________*/
-.ie7 .b-sendContacts__btn {
+.ie7 .b-sendContacts__btn,
+.ie8 .b-sendContacts__btn {
   position: relative;
 }
 /* =Styles For IE
