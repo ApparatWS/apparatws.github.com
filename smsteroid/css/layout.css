@@ -497,6 +497,9 @@ ____________________________________________*/
     height: 38px;
     display: none;
   }
+  .m-error_input {
+    background: url("../i/error_input.png") 0 0 no-repeat !important;
+  }
 }
 body {
   transition: all .9s linear;
