@@ -511,9 +511,8 @@ body {
 ____________________________________________*/
 /* Styles For IE
 ____________________________________________*/
-.ie7 .m-default__service,
-.ie8 .m-default__service {
-  filter: alpha(opacity=20);
+.ie7 .b-sendContacts__btn {
+  position: relative;
 }
 /* =Styles For IE
 ____________________________________________*/
