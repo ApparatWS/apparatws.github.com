@@ -1,6 +1,6 @@
 .selectArea, .center_a, .selectArea .left, .scrollbar-up, .scrollbar-down, .scrollbar-handle {
-background: url(../i/selects.png) 100% 100% no-repeat;
-background-size: cover;
+background: url(../i/desktop_selects.png) 0 0 no-repeat;
+/*background-size: cover;*/
 }
 .selectArea {
 	position: relative;
@@ -97,13 +97,13 @@ background-size: cover;
 	padding: 0 !important;
 	width: 15px;
 	height: 13px;
-	background-position: -20px -112px;
+	background-position: 0 -67px;
 	cursor: pointer;
 	}
 .scrollbar-down {
 	top: auto;
 	bottom: 0;
-	background-position: -20px -99px;
+	background-position: 0 -54px;
 	}
 .scrollbar-track {
 	position: absolute !important;
@@ -114,7 +114,7 @@ background-size: cover;
 	padding: 0 !important;
 	width: 15px;
 	height: 117px;
-	background: #f4f6f8;
+	background: #f3f3f3;
 	}
 * html .scrollbar-track, * html .scrollbar-up, * html .scrollbar-down {right: 0px;}
 .scrollbar-handle {
@@ -126,7 +126,7 @@ background-size: cover;
 	margin: 0 !important;
 	width: 15px;
 	height: 27px;
-	background-position: -20px -125px;
+	background-position: 0 -80px;
 	cursor: pointer;
 	}
 .container2 {
@@ -145,6 +145,6 @@ background-size: cover;
 	display: block !important;
 	margin: 0 !important;
 	padding: 0 !important;
-	width: 1000px !important;
+	width: 100% !important;
 	}
 .selectArea .optionsDivInvisible .scroller-container span {border: none !important;}

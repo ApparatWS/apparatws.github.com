@@ -20,7 +20,7 @@ $(document).ready (function(){
 		if (page == 'about') $('.b-aboutContainer').show()
 		else if (page == 'faq') $('.b-faqContainer').show()
 		else if (page == 'contact') {$('.b-contactsContainer').show(); resizeInput();}
-		else if (page == 'service') $('.b-serviceCheckContainer').show();
+		else if (page == 'service') $('.b-serviceCheckContainer').attr('style', 'position:relative !important; visibility: visible !important; display:block;');
 		}
 	showPage();
 	

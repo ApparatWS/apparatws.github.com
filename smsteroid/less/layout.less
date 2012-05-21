@@ -10,7 +10,9 @@ ____________________________________________*/
 	-moz-opacity: 0.2;
 	filter:alpha(opacity=20);
 	}
-.m-mainContent_containers {display:none;}
+.m-mainContent_containers {
+  display:none;
+  }
 .m-error_input {
 	background: url("../i/error_input.png") 100% 100% no-repeat !important;
   	background-size: 100% 100% !important;
@@ -142,8 +144,12 @@ ____________________________________________*/
 	display:none;
 	}
 .b-serviceCheckContainer {
+  display:block !important;
 	padding: 38px 0px 45px 0px;
-	position: relative;
+	position: absolute !important;
+	visibility:hidden;
+	top:0;
+	left:0;
 	}
 .b-registerSms__select,
 .b-sendSms__select {
@@ -401,11 +407,9 @@ ____________________________________________*/
 		height: 54px;
 		display: block;
 		}
-	.selectArea, .center_a, .selectArea .left, .scrollbar-up, .scrollbar-down, .scrollbar-handle {
-		background: url(../i/desktop_selects.png) 0 0 no-repeat;
-		}
 	.selectArea {
 		height:	54px !important;
+		display:block !important;
 		}
 	.selectArea .optionsDivInvisible, .selectArea .optionsDivVisible {
 		top: 54px !important;
