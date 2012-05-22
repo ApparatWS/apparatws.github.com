@@ -110,17 +110,21 @@
 	                
 	                <div class="b-select-container">
 	                	<p class="b-registerSms__select">
-		                  <select id="registerSms" class="select">
-		                    <option selected="selected" value="">RUSSIA (+7)</option>
+		                  <select id="registerSms" name="test" class="select">
+		                    <option selected="selected">RUSSIA (+7)</option>
 		                    <option>RUSSIA (+7)</option>
 		                    <option>RUSSIA (+7)</option>
 		                    <option>RUSSIA (+7)</option>
+		                    <option>RUSSIA (+3)</option>
 		                    <option>RUSSIA (+7)</option>
 		                    <option>RUSSIA (+7)</option>
 		                    <option>RUSSIA (+7)</option>
+		                    <option>RUSSIA (+6)</option>
 		                    <option>RUSSIA (+7)</option>
 		                    <option>RUSSIA (+7)</option>
+		                    <option>RUSSIA (+6)</option>
 		                    <option>RUSSIA (+7)</option>
+		                    <option>RUSSIA (+8)</option>
 		                    <option>RUSSIA (+7)</option>
 		                  </select>
 		                </p><!-- /end .b-registerSms__select -->
@@ -195,6 +199,15 @@
 		<script src="js/css3-mediaqueries.js"></script>
 		<script src="js/pie.js"></script>
 	<![endif]-->
+	
+	<script>
+	  $(document).ready(function(){
+	    $('#registerSms').change(function() {
+	      alert($(this).val());
+	    });
+	  });
+	</script>
+	
 
 </body>
 </html>

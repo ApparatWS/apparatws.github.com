@@ -27,6 +27,7 @@ $(document).ready (function(){
 	$('.b-mainNav-list_item').on('click', function(){
 		$(this).siblings().removeClass('m-active_item').end().addClass('m-active_item');
 		$('.m-mainContent_containers').hide();
+		$('.b-serviceCheckContainer').attr('style',' visibility: hidden !important;');
 		showPage();
 		return false;
 	});

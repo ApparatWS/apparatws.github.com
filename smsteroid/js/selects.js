@@ -10,7 +10,7 @@ $(document).ready(function(){
     changeSelects();
     
     //set values and generate change event when option selected
-    $('div.optionsDivInvisible span').live(event,function(){
+    $(document).on(event,'div.optionsDivInvisible span',function(){
         $(this).closest('.selectArea').find('input[type="hidden"]').attr("value", $(this).attr("name"));   
         $(this).closest('.selectArea').find('input[type="text"]').attr("value", $(this).text());     
         $(this).closest('.optionsDivInvisible').hide();
@@ -26,8 +26,7 @@ $(document).ready(function(){
         }
     );
     
-    $('div.selectArea > input,div.center_a').live(event, function(){
-    	if ($(this).closest('.selectArea').hasClass('disabled')) return false;
+    $(document).on(event, 'div.selectArea > input,div.center_a', function(){
         $(this).closest('.selectArea').find('.optionsDivInvisible').slideToggle(200);
 
         //generate scrollbar if options more than 8
@@ -41,7 +40,7 @@ $(document).ready(function(){
         
     });
     
-    $(document).bind(event, function(e){
+    $(document).on(event, function(e){
         if ($(e.target).closest(".selectArea").length) return;
         $('.selectArea').find('.optionsDivInvisible:visible').slideUp(200);
         e.stopPropagation();
@@ -53,7 +52,7 @@ $(document).ready(function(){
     function changeSelects(selector){
         if (!selector) selector = '';
       
-        $("."+ selector + "select").each(function(index){
+        $("." + selector + "select").each(function(index){
             
             index = counter;
         
@@ -71,6 +70,7 @@ $(document).ready(function(){
                 
                 $(this).before("\
                     <div class='selectArea " + selClassName + "' style='z-index:"+(100-index)+"'>\
+                        <div class='left'></div>\
                         <div class='center_a'></div>\
                         <div class='optionsDivInvisible' id='optInvis_" + index + "'>\
                             <div class='scrollbar-container' id='scroll_container_"+index+"'>\
@@ -115,6 +115,7 @@ $(document).ready(function(){
             {
                 $(this).before("\
                     <div class='selectArea " + selClassName + "' style='z-index:"+ (100-index)+"'>\
+                        <div class='left'></div>\
                         <div class='center_a'></div>\
                         <div class='optionsDivInvisible' id='" + selId + "_fake'></div>\
                         <input type='text' readonly name='v" + selName + "' id='v" + selId + "' />\
